@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #eaeaea;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #a30d2e;
+    color: #fff;
+}
+
+.container .top h3 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #a30d2e;
+    transform: skew(-10deg);
+    font-size: 1.8rem;
+    border: 2px solid #a30d2e;
+    border-radius: 5px;
+}
+
+.container .top a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #a30d2e;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.container .top a:hover {
+    background-color: #a30d2e;
+    color: #fff;
+    border-color: #a30d2e;
+}
+
+.container .bottom {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.container .bottom ul {
+    list-style: none;
+    padding: 20px;
+    background-color: #a30d2e;
+    color: #fff;
+    width: 220px;
+    border-radius: 8px 0 0 8px;
+}
+
+.container .bottom ul li {
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px dashed #f0f0f0;
+    border-radius: 5px;
+}
+
+.container .bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.container .bottom ul li:hover {
+    background-color: #8e0c28;
+}
+
+.container .bottom iframe {
+    flex-grow: 1;
+    height: 600px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .container .bottom {
+        flex-direction: column;
+    }
+    .container .bottom ul {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 20px;
+    }
+    .container .bottom iframe {
+        border-radius: 0 0 8px 8px;
+    }
+}

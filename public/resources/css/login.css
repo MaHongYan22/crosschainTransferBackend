@@ -1,0 +1,169 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*删除下划线*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*设置超链接未点击时的颜色*/
+
+a:link {
+    color: rgb(246, 65, 119);
+}
+
+
+/* 已访问的链接 */
+
+a:visited {
+    color: rgb(246, 65, 119)
+}
+
+
+/* 鼠标移动到链接上 */
+
+a:hover {
+    color: rgb(231, 47, 47)
+}
+
+.container {
+    /*让div大小和屏幕的宽高一样大小*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*设置背景图片*/
+    background-image: url(../image/dlbjt.jpg);
+}
+
+.main {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login {
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+    font-family: "STCaiyun";
+    font-size: 68px;
+    /*设置发光效果*/
+    text-shadow: 0 0 10px rgb(141, 76, 221), 0 0 20px rgb(221, 76, 124), 0 0 30px rgb(221, 76, 124), 0 0 40px rgb(221, 76, 124);
+}
+
+.forget {
+    font-weight: bolder;
+    font-family: "YouYuan";
+    font-size: 19px;
+    display: block;
+    position: absolute;
+    left: 30px;
+    margin-top: 5px;
+}
+
+.content {
+    height: 320px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px azure;
+    /*阴影设置*/
+    background-color: rgba(253, 206, 237, 0.34);
+    /*设置颜色，,0.34为透明度，这样不影响子级div的透明度*/
+    /*此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
+    display: table-cell;
+    /*垂直居中 */
+    vertical-align: middle;
+    /*水平居中*/
+    text-align: center;
+}
+
+
+/*input框设置*/
+
+input {
+    color: rgb(251, 194, 202);
+    /*input-value值内容的颜色设置*/
+    font-size: 15px;
+    /*input字体大小设置值*/
+    outline: none;
+    /*鼠标点击input框，不显示边框颜色*/
+}
+
+
+/*鼠标触碰用户名框，边框颜色改变*/
+
+.account {
+    height: 40px;
+    width: 230px;
+    border-radius: 8px;
+    /*设置边框圆角*/
+    border-color: white;
+    /*边框颜色*/
+    margin-top: 5px;
+}
+
+.password {
+    height: 40px;
+    width: 230px;
+    border-radius: 8px;
+    /*设置边框圆角*/
+    margin-top: 20px;
+    /*设置元素的上外边距。*/
+    margin-bottom: 25px;
+    /*设置元素的下外边距。*/
+    border-color: white;
+    /*边框颜色*/
+}
+
+
+/*鼠标触碰登录，边框颜色改变*/
+
+.button1:hover {
+    border-color: lavender;
+    /*边框颜色*/
+}
+
+.button1 {
+    height: 40px;
+    width: 130px;
+    font-size: 17px;
+    font-family: "YouYuan";
+    border-radius: 8px;
+    /*设置边框圆角*/
+    background-color: rgba(230, 247, 77, 0.91);
+    /*登录框背景颜色*/
+    border-color: rgba(243, 47, 116, 0);
+    ;
+    /*边框颜色*/
+}
+
+
+/*鼠标触碰注册，边框颜色改变*/
+
+.button2:hover {
+    border-color: lavender;
+    /*边框颜色*/
+}
+
+.button2 {
+    height: 40px;
+    width: 130px;
+    font-size: 17px;
+    font-family: "YouYuan";
+    border-radius: 8px;
+    /*设置边框圆角*/
+    margin-top: 15px;
+    background-color: rgba(77, 131, 247, 0.91);
+    /*注册框背景颜色*/
+    border-color: rgba(243, 47, 116, 0);
+    ;
+    /*边框颜色*/
+}

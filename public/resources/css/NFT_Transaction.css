@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* 确保padding和border不会影响元素的实际宽度 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 设置统一的字体 */
+}
+
+.container {
+    max-width: 1200px;
+    /* 限制容器宽度 */
+    margin: 0 auto;
+    /* 居中显示容器 */
+    padding: 20px;
+    /* 容器内边距 */
+    background-color: #f9f9f9;
+    /* 轻微灰色背景 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 容器阴影 */
+    border-radius: 8px;
+    /* 圆角边框 */
+}
+
+.container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 垂直居中flex子项 */
+    border-bottom: 2px solid #d1d1d1;
+    padding-bottom: 15px;
+    /* 调整底部内边距 */
+}
+
+
+/* 搜索框和按钮样式 */
+
+.container .top .search input[type=text],
+.container .top .search input[type=button],
+.container .top .btn input[type=button] {
+    padding: 8px 12px;
+    /* 增加内边距 */
+    font-size: 14px;
+    /* 增大字体大小 */
+    border-radius: 4px;
+    /* 圆角边框 */
+}
+
+.container .top .search input[type=text] {
+    border: 2px solid #d1d1d1;
+    /* 更细腻的边框 */
+    width: 200px;
+    /* 设置输入框宽度 */
+    margin-right: 10px;
+    /* 调整右边距 */
+}
+
+.container .top .search input[type=button],
+.container .top .btn input[type=button] {
+    border: none;
+    background-color: #5cb85c;
+    /* 鲜艳的按钮背景色 */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* 过渡效果 */
+}
+
+.container .top .search input[type=button]:hover,
+.container .top .btn input[type=button]:hover {
+    background-color: #449d44;
+    /* 鼠标悬停时变化背景色 */
+}
+
+
+/* 表格样式 */
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* 增加表格上边距 */
+}
+
+.container table thead tr {
+    background-color: #5cb85c;
+    /* 统一表头背景色 */
+    color: #ffffff;
+    /* 表头文字颜色 */
+    font-size: 15px;
+    /* 表头字体大小 */
+}
+
+.container table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* 奇数行背景色 */
+}
+
+.container table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* 偶数行背景色 */
+}
+
+.container table tbody tr:hover {
+    background-color: #e8f4e8;
+    /* 鼠标悬停行背景色 */
+}
+
+.container table thead tr th,
+.container table tbody tr td {
+    padding: 12px;
+    /* 单元格内边距 */
+    text-align: center;
+    vertical-align: middle;
+    /* 垂直居中 */
+    border: 1px solid #ddd;
+    /* 单元格边框 */
+}
+
+
+/* 状态列样式调整 */
+
+.container table thead .status-col,
+.container table tbody td.status-col {
+    width: 160px;
+    /* 状态列的固定宽度 */
+}
+
+.container table thead .status-col,
+.container table tbody td.status-col {
+    min-width: 120px;
+    /* 或者更多，根据你的具体需要 */
+    padding: 2px 10px;
+    /* 增加了水平内边距 */
+    text-align: center;
+    /* 如果需要的话 */
+}
+
+
+/* 其他样式保持不变 */
+
+
+/* 分页器样式 */
+
+.pagebox {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pagebox li {
+    list-style: none;
+    border: 1px solid #5cb85c;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    /* 过渡效果 */
+    cursor: pointer;
+}
+
+.pagebox li:hover {
+    background-color: #449d44;
+    /* 鼠标悬停时变化背景色 */
+    color: #fff;
+}
+
+.pagebox .current {
+    background-color: #5cb85c;
+    color: #fff;
+}

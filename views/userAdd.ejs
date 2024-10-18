@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加用户</title>
+    <link rel="stylesheet" href="./resources/css/userAdd.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./resources/js/userAdd.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>添加用户</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="account">账户：</label>
+                <input type="text" id="account" name="account" required>
+            </div>
+            <div class="form-group">
+                <label for="chainId">链ID：</label>
+                <input type="text" id="chainId" name="chainId" required>
+            </div>
+            <button type="submit" class="add">添加用户</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

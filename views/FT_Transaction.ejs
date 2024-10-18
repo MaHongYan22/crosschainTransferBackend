@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../resources/css/FT_Transaction.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="../resources/js/FT_Transaction.js" defer>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <table border="1">
+            <div class="top">
+                <div class="search">
+                    <input type="text" class="searchStatus" placeholder="请输入交易状态查找特定交易">
+                    <input type="text" class="searchRecipient" placeholder="请输入接收者账户地址">
+                    <input type="button" class="searchCondition" value="查找">
+                </div>
+                <div class="btn">
+                    <input type="button" class="withdrawETH" value="资产退还交易">
+                    <input type="button" class="viewToken" value="查看资产转移情况">
+                    <input type="button" class="crosschainFT" value="发起跨链交易">
+                </div>
+            </div>
+            <thead>
+                <tr>
+                    <th><input class="checkAll" type="checkbox"></th>
+                    <th>ID</th>
+                    <th class="status-col" width="80">状态</th>
+                    <th width="60">发送者账户</th>
+                    <th width="60">接收者账户</th>
+                    <th>发送链ID</th>
+                    <th width="60">接收链ID</th>
+                    <th width="70">交易金额</th>
+                    <th width="100">交易时间</th>
+                    <th width="90">操作</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>交易已发送</td>
+                    <td>0x3c1612fde154CA8CF7996A1Ac2A4C7026F2B0Ed0</td>
+                    <td>0xE70ba76A7fA459E5C846EBFF2DE397335a4Fd539</td>
+                    <td>1337</td>
+                    <td>11155111</td>
+                    <td>30</td>
+                    <td>2024-03-18 18:30:06</td>
+                    <td><input type="button" value="删除"><input type="button" value="修改"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>交易已发送</td>
+                    <td>0x3c1612fde154CA8CF7996A1Ac2A4C7026F2B0Ed0</td>
+                    <td>0xE70ba76A7fA459E5C846EBFF2DE397335a4Fd539</td>
+                    <td>1337</td>
+                    <td>11155111</td>
+                    <td>30</td>
+                    <td>2024-03-18 18:30:06</td>
+                    <td><input type="button" value="删除"><input type="button" value="修改"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>交易已发送</td>
+                    <td>0x3c1612fde154CA8CF7996A1Ac2A4C7026F2B0Ed0</td>
+                    <td>0xE70ba76A7fA459E5C846EBFF2DE397335a4Fd539</td>
+                    <td>1337</td>
+                    <td>11155111</td>
+                    <td>30</td>
+                    <td>2024-03-18 18:30:06</td>
+                    <td><input type="button" value="删除"><input type="button" value="修改"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>交易已发送</td>
+                    <td>0x3c1612fde154CA8CF7996A1Ac2A4C7026F2B0Ed0</td>
+                    <td>0xE70ba76A7fA459E5C846EBFF2DE397335a4Fd539</td>
+                    <td>1337</td>
+                    <td>11155111</td>
+                    <td>30</td>
+                    <td>2024-03-18 18:30:06</td>
+                    <td><input type="button" value="删除"><input type="button" value="修改"></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <ul class="pagebox">
+            <li>首页</li>
+            <li>上一页</li>
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>下一页</li>
+            <li>尾页</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

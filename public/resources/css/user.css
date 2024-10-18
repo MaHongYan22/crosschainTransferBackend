@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #910000;
+    padding-bottom: 15px;
+}
+
+.container .top .search input[type=text] {
+    border: 2px solid #910000;
+    padding: 8px 12px;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.container .top .search input[type=button],
+.container .top .btn input[type=button] {
+    padding: 8px 12px;
+    background-color: #910000;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container .top .search input[type=button]:hover,
+.container .top .btn input[type=button]:hover {
+    background-color: #a32100;
+}
+
+.container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.container table thead tr {
+    background-color: #910000;
+    color: #fff;
+    font-size: 15px;
+}
+
+.container table tbody tr {
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.container table tbody tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+.container table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.container table th,
+.container table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container table th {
+    text-align: center;
+    border-bottom: 3px solid #910000;
+}
+
+.container table td {
+    text-align: center;
+}
+
+.container table tbody tr td input {
+    padding: 6px 10px;
+    border: 1px solid #910000;
+    background-color: #fff;
+    color: #910000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.container table tbody tr td input:hover {
+    background-color: #910000;
+    color: #fff;
+}
+
+.pagebox {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagebox li {
+    list-style: none;
+    border: 1px solid #910000;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #910000;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pagebox li:hover,
+.pagebox .current {
+    background-color: #910000;
+    color: #fff;
+}

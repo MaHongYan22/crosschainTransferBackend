@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT跨链操作</title>
+    <link rel="stylesheet" href="./resources/css/NFTcrosschain.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>NFT跨链</h1>
+        <div class="form-container">
+            <form id="crossChainTransferForm">
+                <div class="form-group">
+                    <label for="tokenId">令牌ID (uint256)</label>
+                    <input type="number" id="tokenId" name="tokenId" required>
+                </div>
+                <div class="form-group">
+                    <label for="fixedAddress">sepolia中NFT跨链桥地址</label>
+                    <input type="text" id="fixedAddress" name="fixedAddress" value="0x1F3f34F8e75e87Fb2311ae7Ab6C085fbd1539e76" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="targetChainRecipient">目标链接收者 (地址)</label>
+                    <input type="text" id="targetChainRecipient" name="targetChainRecipient" required>
+                </div>
+                <button type="submit" class="transact">发起交易</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./resources/js/NFTcrosschain.js"></script>
+
+</body>
+
+</html>

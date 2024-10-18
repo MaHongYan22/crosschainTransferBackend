@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>授权交易</title>
+    <link rel="stylesheet" href="./resources/css/NFTapprove.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>授权交易</h1>
+        <div class="form-container">
+            <form id="approveForm">
+                <div class="form-group">
+                    <label for="toAddress">授权地址 (address)</label>
+                    <input type="text" id="toAddress" name="toAddress" value="0x53Ed6649cE42Ff75D2034dd1464A70f3912C7683" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="tokenId">令牌ID (uint256)</label>
+                    <input type="number" id="tokenId" name="tokenId" required>
+                </div>
+                <button type="submit" class="transact">授权</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./resources/js/NFTapprove.js"></script>
+
+</body>
+
+</html>
